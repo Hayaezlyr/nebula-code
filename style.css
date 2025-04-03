@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #4B0082; /* Indigo Blue */
+    --secondary-color: #9370DB; /* Medium purple for a nebula feel */
+    --navbar-bg: #D8BFD8; /* Thistle for contrast with the dark indigo logo */
+    --section-bg: #E6E6FA; /* Lavender for a soft look */
+    --card-bg: #FFFFFF;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--section-bg);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+}
+
+.navbar .nav-link, .navbar-brand {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 200px 20px;
+    text-align: center;
+}
+
+.btn-custom {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #836FFF;
+}
+
+.logo {
+    height: 50px;
+}
+
+section {
+    padding: 100px 20px;
+}
+
+#about, #services, #contact {
+    background-color: var(--section-bg);
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 30%;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
